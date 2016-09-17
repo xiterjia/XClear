@@ -1,0 +1,50 @@
+{
+	"background": {
+		"scripts": [ "js/background.js"]
+	},
+	
+	"manifest_version": 2,
+
+	"default_locale": "zh_CN",
+
+	"name": "清除缓存1.0",
+	"description": "清除缓存1.0",
+	
+	// "name": "__MSG_ext_name__",
+	// "description": "__MSG_ext_description__",
+	"offline_enabled": true,
+
+	//"update_url": "https://clients2.google.com/service/update2/crx",
+	"version": "1.0.0",
+
+	"minimum_chrome_version": "20.0.0.0",
+
+   	"permissions": [ "http://*/*", "https://*/*", "browsingData", "tabs" , "storage" ],
+
+	// "permissions": [
+	// 	"webRequest", 
+	// 	"webRequestBlocking",
+	// 	"browsingData", 
+	// 	"tabs", 
+	// 	"http://*/", 
+	// 	"https://*/", 
+	// 	"contextMenus",
+	// 	"storage"
+	// ],
+
+	"browser_action": {
+		"default_icon": "images/icons/icon-48.png",
+		"default_title": "清除缓存"
+		// "default_title": "__MSG_ext_name__"
+	},
+
+
+	"icons": {
+		"16": "images/icons/icon-16.png",
+		"48": "images/icons/icon-48-1.png",
+		"128": "images/icons/icon-128.png"
+	},
+
+	/*其他扩展 添加消除缓存的配置项*/
+	"options_page": "options.html"
+}
