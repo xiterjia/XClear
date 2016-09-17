@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>配置要清除的缓存信息</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <style>
+        body{width:300px;margin:30px auto 0;}
+        h3{text-align:center;}
+        ul,ol,li{list-style-type:none;margin:0;padding:0;}
+        li{line-height:26px;background-color:#eee;padding-left:8px;}
+        .odd{background-color:#ddd;padding-bottom:2px;}
+        input{vertical-align:middle;margin-right:10px}
+        label{display:block}
+        div{margin-top:10px;}
+        button{color:#fff;width:45%;line-height:30px;border:none;cursor:pointer;border-radius:1px;}
+        .save{background-color:#5cb85c;border-color:#4cae4c}
+        .save:hover{background-color:#398439;border-color:#255625}
+        .close{background-color:#337ab7;border-color:#2e6da4;float:right;}
+        .close:hover{background-color:#286090;border-color:#204d74}
+    </style>
+</head>
+<body>
+    <h3>配置要清除的缓存信息</h3>
+    <ol>
+        <li>时间段：
+            <select name="" id="xcacheDate">
+                <option value="1">一天内（1天）</option>
+                <option value="7">一周内（7天）</option>
+                <option value="28">四周内（28天）</option>
+                <option value="30">一月内（30天）</option>
+                <option value="90">一季度内（90天）</option>
+                <option value="365">一年内（365天）</option>
+            </select>
+        </li>
+        <li><label><input type="checkbox" id="xcache">浏览器缓存</label></li>
+        <li class="odd"><label><input type="checkbox" id="xcookies">Cookies</label></li>
+        <li><label><input type="checkbox" id="xstorage">Storage</label></li>
+        <li class="odd"><label><input type="checkbox" id="xindexedDB">indexedDB</label></li>
+        <li><label><input type="checkbox" id="xwebSQL">webSQL</label></li>
+        <li class="odd"><label><input type="checkbox" id="xpasswords">已保存的密码</label></li>
+        <li><label><input type="checkbox" id="xformData">历史表单数据</label></li>
+        <li class="odd"><label><input type="checkbox" id="xhistory">浏览记录</label></li>
+        <li><label><input type="checkbox" id="xdownloads">下载记录</label></li>
+        <li class="odd"><label><input type="checkbox" id="xpluginData">扩展缓存</label></li>
+        <li><label><input type="checkbox" id="xappcache">应用缓存</label></li>
+        <li class="odd"><label><input type="checkbox" id="xfileSystems">文件系统</label></li>
+    </ol>
+    <div>
+        <button id="save" class="save">保存</button>
+        <button id="close" class="close">关闭</button></div>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/options.js" charset="utf-8"></script>
+</body>
+</html>
