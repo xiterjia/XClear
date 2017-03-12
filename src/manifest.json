@@ -1,0 +1,45 @@
+{
+	"background": {
+		"scripts": [ "js/background.js"]
+	},
+	
+	"manifest_version": 2,
+
+
+	"name": "快速清除浏览器缓存信息",
+	"description": "快速清除浏览器的缓存信息，可自定义缓存的类型，要清除的时间，适合在Web开发过程中因为浏览器缓存原因而导致的一系列的不爽（明明修改了代码，但是没有加载最新的资源而浪费时间）。使用简单，右键->`选项`->选择要清除的时间段和缓存类型，保存后，点击扩展程序后即可完成清除并刷新当前活动的页面。",
+	
+	"offline_enabled": true,
+
+	"version": "1.0.0",
+
+	"minimum_chrome_version": "20.0.0.0",
+
+   	"permissions": [ "http://*/*", "https://*/*", "browsingData", "tabs" , "storage" ],
+
+	// "permissions": [
+	// 	"webRequest", 
+	// 	"webRequestBlocking",
+	// 	"browsingData", 
+	// 	"tabs", 
+	// 	"http://*/", 
+	// 	"https://*/", 
+	// 	"contextMenus",
+	// 	"storage"
+	// ],
+
+	"browser_action": {
+		"default_icon": "images/icons/icon-48.png",
+		"default_title": "清除缓存"
+	},
+
+
+	"icons": {
+		"16": "images/icons/icon-16.png",
+		"48": "images/icons/icon-48-1.png",
+		"128": "images/icons/icon-128.png"
+	},
+
+	/*其他扩展 添加消除缓存的配置项*/
+	"options_page": "options.html"
+}
